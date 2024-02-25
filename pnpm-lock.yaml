@@ -12,6 +12,14 @@ importers:
         specifier: ^3.0.11
         version: 3.0.11(@babel/core@7.23.9)(@types/node@20.11.20)(eslint@8.57.0)(jest@29.7.0)(ts-jest@29.1.2)(ts-node@10.9.2)(typescript@5.3.3)
 
+  packages/a:
+    dependencies:
+      b:
+        specifier: workspace:^
+        version: link:../b
+
+  packages/b: {}
+
   packages/template: {}
 
 packages:
