@@ -1,0 +1,17 @@
+name: Sync dev branches
+on:
+    push:
+        branches:
+            - "*"
+
+jobs:
+    sync:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - name: Techor Actions
+              uses: techor-dev/techor@v2.5.17
+              with:
+                  action: "sync-dev-branches"
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

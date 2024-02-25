@@ -1,1 +1,1 @@
-# monorepo
+packages/template/README.md
