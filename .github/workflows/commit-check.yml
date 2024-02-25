@@ -30,4 +30,4 @@ jobs:
                   cache: 'pnpm'
             - run: pnpm install
             - run: pnpm build
-            - run: pnpm commit-check
+            - run: pnpm check:commit
