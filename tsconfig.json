@@ -1,5 +1,9 @@
 {
     "compilerOptions": {
+        "paths": {
+            "a": [ "./node_modules/a/src" ],
+            "b": [ "./node_modules/b/src" ]
+        },
         "target": "esnext",
         "module": "esnext",
         "moduleResolution": "Bundler",
