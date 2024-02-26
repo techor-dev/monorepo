@@ -1,5 +1,6 @@
 {
     "private": true,
+    "type": "module",
     "scripts": {
         "postinstall": "pnpm dlx husky install",
         "build": "pnpm --filter \"./packages/*\" build",
@@ -19,7 +20,7 @@
         "url": "https://github.com/techor-dev/techor.git"
     },
     "dependencies": {
-        "@techor/repo": "^3.0.14"
+        "@techor/repo": "^3.0.17"
     },
     "devDependencies": {
         "a": "workspace:^",
